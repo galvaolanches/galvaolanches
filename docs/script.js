@@ -19,7 +19,8 @@ function mostrarCategoria(categoria) {
     prodDiv.className = "produto";
     prodDiv.innerHTML = `
       <img src="${prod.imagem}" alt="${prod.nome}">
-      <span>${prod.nome} - R$${prod.preco}</span>
+      <span class="nome-produto">${prod.nome}</span>
+      <span class="preco-produto">R$${prod.preco}</span>
       <button onclick="pedirWhatsApp('${prod.nome}', ${prod.preco})">Pedir</button>
     `;
     cardapioDiv.appendChild(prodDiv);

@@ -6,8 +6,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Cardápio Galvão Lanches</h1>
-  <button onclick="fazerPedido('X-Burger')">Pedir X-Burger</button>
+  <header>
+    <h1>Cardápio Galvão Lanches</h1>
+    <nav class="categorias">
+      <button class="aba-btn active" data-categoria="Lanches">Lanches</button>
+      <button class="aba-btn" data-categoria="Bebidas">Bebidas</button>
+      <button class="aba-btn" data-categoria="Sobremesas">Sobremesas</button>
+    </nav>
+  </header>
+
+  <main id="cardapio"></main>
 
   <script src="script.js"></script>
 </body>
